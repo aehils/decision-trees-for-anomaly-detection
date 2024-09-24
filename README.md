@@ -62,7 +62,7 @@ Anomaly coordinates are displayed in the client shell when injected. You will sp
 
 ### Acknowledgements
 
-This project includes code from another repository: https://github.com/exalens/factory-sim.git
+This project includes code modified from another repository: https://github.com/exalens/factory-sim.git
 
 Files client.py, factory.py, and recipe.py were originally retrieved from this repository. Significant changes have been made to client.py and factory.py, while recipe.py remains largely unchanged but is necessary for the functionality of the simulation.
 
