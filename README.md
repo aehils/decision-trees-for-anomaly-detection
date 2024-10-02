@@ -24,19 +24,15 @@ The prepared dataset ready for model training -- data/processed/prepared_operati
 
 ### Guide
 1. Build a Docker container image.\
-   The recommended way to create a Docker image for this task is by writing a basic Dockerfile that defines the steps needed to build the image.\
+   The recommended way to create a Docker image for this task is by writing a basic Dockerfile that defines the steps needed to build the image.
 
     Docker provides comprehensive documentation on how to create a Dockerfile suitable for a python application here:\
    https://docs.docker.com/get-started/docker-concepts/building-images/writing-a-dockerfile/
 
    There is also documentation on how you will build your container image from this Dockerfile, available here: https://docs.docker.com/get-started/docker-concepts/building-images/build-tag-and-publish-an-image/
 
-   In short, you will use this command to create a Docker image from a Dockerfile located in your current directory.
+   In short, you will use this command to create a Docker image from a Dockerfile located in your current directory.\
    `docker build -t [imagename]:[tag] .`
-
-   `docker build`:- Initiates the image building process \
-   `-t [imagename]:[tag]`:- Tags the resulting image with a name and tag. Tags are a way to version your images. 'latest' is a commonly used tag to indicate the most recent version of an image, but you can use any tag that suits your versioning strategy (e.g., v1.0, release, stable).\
-   `.`:- Defines the build context. By specifying `.` (the current directory), you tell Docker to use the current directory's contents to build the image. This directory should include a Dockerfile, which contains the instructions on how to build the image.
    
 3. Initialise a new container from this image using\
 	`docker run -it --name [containername] -v /host/path:/container/path [imagename]`
