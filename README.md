@@ -22,7 +22,7 @@ The raw dataset -- data/raw/operation_log.csv\
 The cleaned dataset -- data/processed/clean_operation_log.csv\
 The prepared dataset ready for model training -- data/processed/prepared_operation_log.csv
 
-### Guide
+## Guide to running the app
 1. Build a Docker container image.\
    The recommended way to create a Docker image for this task is by writing a basic Dockerfile that defines the steps needed to build the image.
 
